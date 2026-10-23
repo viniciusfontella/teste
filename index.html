@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!-- Viewport: garante a escala correta em celulares. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- SEO: título e descrição exibidos no Google. Textos baseados apenas em dados reais. -->
+<title>Galheri Ateliê da Beleza | Salão de Beleza em Caçapava</title>
+<meta name="description" content="Galheri Ateliê da Beleza em Caçapava-SP. Especialistas em morena iluminada, loiros, cronograma capilar, manicure express e beleza.">
+<meta name="robots" content="index, follow">
+<!-- Troque o domínio abaixo pelo endereço real quando o site for publicado. -->
+<link rel="canonical" href="https://www.seudominio.com.br/">
+<!-- Open Graph: pré-visualização ao compartilhar o link (WhatsApp, Facebook). -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Galheri Ateliê da Beleza | Caçapava-SP">
+<meta property="og:description" content="Morena iluminada, loiros, cronograma capilar, manicure express e autoestima feminina.">
+<meta property="og:image" content="images/hero-1.webp">
+<!-- Favicon: usa a logo. Substitua por um favicon próprio se desejar. -->
+<link rel="icon" href="images/logo.png">
+<!-- Fontes: Playfair Display (títulos) e Inter (textos). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Dados estruturados (Schema.org). Apenas informações fornecidas: sem preços ou coordenadas. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Galheri Ateliê da Beleza",
+  "telephone": "+5512997230207",
+  "url": "https://agendeonline.salonsoft.com.br/galheriateliedabeleza",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Sete de Setembro, 22",
+    "addressLocality": "Caçapava",
+    "addressRegion": "SP",
+    "postalCode": "12281-620",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/galheri_atelie/", "https://www.facebook.com/vanessagalheri/"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<!-- Header fixo. O botão de agendamento usa data-booking: o JS aplica o link de CONFIG.bookingUrl. -->
+<header class="header" id="inicio-topo">
+  <div class="container header__in">
+    <!-- LOGO: arquivo images/logo.png. Se não existir, a imagem some e fica só o nome em texto. -->
+    <a class="logo" href="#inicio" aria-label="Galheri Ateliê da Beleza - início">
+      <img src="images/logo.png" alt="" width="60" height="60" data-keep onerror="this.remove()">
+      <span class="logo-name">Galheri <small>Ateliê da Beleza</small></span>
+    </a>
+    <nav id="menu" class="nav" aria-label="Principal">
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Galeria</a>
+    </nav>
+    <a class="btn btn--gold header__cta" data-booking target="_blank" rel="noopener noreferrer">Agendar horário</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <span class="burger__icon" aria-hidden="true">☰</span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+<!--
+  Hero principal da página.
+  Apresenta a proposta do salão e tem o principal botão de conversão.
+  Fundo: 4 imagens que alternam sozinhas (images/hero-1.webp ... hero-4.webp). Substitua pelas fotos oficiais.
+-->
+<section class="hero" id="inicio">
+  <!-- Slides do fundo. initHeroSlider() alterna entre os que existirem; sem imagens, aparece o degradê. -->
+  <div class="hero__slides" id="slides" aria-hidden="true">
+    <img src="images/hero-1.webp" alt="" width="1920" height="1080" fetchpriority="high" data-fallback="hero">
+    <img src="images/hero-2.webp" alt="" width="1920" height="1080" data-fallback="hero">
+    <img src="images/hero-3.webp" alt="" width="1920" height="1080" data-fallback="hero">
+    <img src="images/hero-4.webp" alt="" width="1920" height="1080" data-fallback="hero">
+  </div>
+  <div class="container hero__txt">
+    <h1>Beleza que valoriza a sua <em>essência</em>.</h1>
+    <p>Especialistas em morena iluminada, loiros, cronograma capilar, manicure express e tudo que envolve autoestima feminina em Caçapava/SP.</p>
+    <div class="hero__btns">
+      <a class="btn btn--gold" data-booking target="_blank" rel="noopener noreferrer">Agendar horário</a>
+      <a class="btn btn--line" href="#servicos">Conhecer serviços</a>
+    </div>
+    <!-- Redes sociais: os links vêm do CONFIG no script.js. -->
+    <div class="hero__social">
+      <a class="social-btn" data-link="whatsappUrl" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z" fill="currentColor"/></svg></a>
+      <a class="social-btn" data-link="facebookUrl" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M14 8h2V5h-2.5C11.3 5 10 6.4 10 8.5V10H8v3h2v7h3v-7h2.2l.5-3H13V8.7c0-.5.2-.7 1-.7z" fill="currentColor"/></svg></a>
+      <a class="social-btn" data-link="instagramUrl" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- Sobre: usa somente a descrição fornecida. Não há história, datas ou certificações inventadas. -->
+<section class="section" id="sobre">
+  <div class="container about reveal">
+    <img src="images/fotodosalao.jpeg" alt="FOTO DO SALÃO" width="640" height="760" loading="lazy" data-fallback="about">
+    <div>
+      <h2>Um espaço para <em>cuidar</em> de você</h2>
+      <h3 class="about__sub">Onde estamos?</h3>
+      <!-- Endereço e botão "Como chegar" (link vem de CONFIG.mapsUrl). -->
+      <address>Rua Sete de Setembro, 22 · Centro<br>Caçapava - SP · 12281-620</address>
+      <a class="btn btn--dark" data-link="mapsUrl" target="_blank" rel="noopener noreferrer">Como chegar</a>
+      <!-- Horário de funcionamento: a lista é preenchida pelo JS (CONFIG.hours). -->
+      <h3 class="about__sub">Horário de funcionamento</h3>
+      <ul class="hours" id="hours"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- Especialidades: cards gerados pelo JS (initSpecialties) a partir de CONFIG.specialties. -->
+<section class="section section--alt" id="especialidades">
+  <div class="container">
+    <h2 class="center">Nossas <em>especialidades</em></h2>
+    <div class="grid" id="specialties"></div>
+  </div>
+</section>
+
+<!--
+  Serviços: uma fileira horizontal por categoria.
+  As fileiras são montadas pelo JS a partir do objeto "services" em script.js.
+-->
+<section class="section" id="servicos">
+  <div class="container">
+    <h2 class="center">Nossos <em>serviços</em></h2>
+    <p class="center lead">75 serviços em 5 categorias. Escolha a categoria ou busque pelo nome do serviço.</p>
+    <div id="service-rows"></div>
+    <p class="center"><a class="btn btn--gold" data-booking target="_blank" rel="noopener noreferrer">Agendar horário</a></p>
+  </div>
+</section>
+
+<!-- Galeria: fotos em images/gallery/. Cada foto abre no lightbox. -->
+<section class="section section--alt" id="galeria">
+  <div class="container">
+    <h2 class="center">Resultados que <em>inspiram</em></h2>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<!-- Transformações: o JS esconde esta seção se não houver imagens em CONFIG.beforeAfter. -->
+<section class="section" id="transformacoes" hidden>
+  <div class="container">
+    <h2 class="center">Transformações</h2>
+    <div class="ba" id="ba"></div>
+  </div>
+</section>
+
+<!-- CTA final -->
+<section class="cta">
+  <div class="container center">
+    <h2>Seu momento de <em>cuidado</em> começa aqui.</h2>
+    <p>Agende seu horário e venha viver sua experiência no Galheri Ateliê da Beleza.</p>
+    <a class="btn btn--gold" data-booking target="_blank" rel="noopener noreferrer">Agendar horário</a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__in">
+    <div>
+      <strong>GALHERI ATELIÊ DA BELEZA</strong>
+      <p>Rua Sete de Setembro, 22<br>Centro – Caçapava/SP</p>
+      <p>(12) 99723-0207</p>
+    </div>
+    <nav aria-label="Rodapé">
+      <a data-link="instagramUrl" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a data-link="facebookUrl" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a data-booking target="_blank" rel="noopener noreferrer">Agendamento</a>
+    </nav>
+  </div>
+  <p class="center copy">© Galheri Ateliê da Beleza</p>
+  <!-- Crédito do desenvolvedor. O botão abre o WhatsApp do desenvolvedor (formato wa.me: 55 + DDD + número). -->
+  <p class="center copy copy--credit">Site desenvolvido por Vinícius Fontella, telefone para contato:
+    <a class="dev-wa" href="https://wa.me/5512991079757" target="_blank" rel="noopener noreferrer" aria-label="Falar com Vinícius Fontella no WhatsApp"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z" fill="currentColor"/></svg><span>(12) 99107-9757</span></a>
+  </p>
+</footer>
+
+<!-- Botão flutuante de WhatsApp (link vem de CONFIG.whatsappUrl). -->
+<a class="wa-float" data-link="whatsappUrl" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp" title="Falar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2-1.4-2.4-2.4l.8-1-1-2z" fill="currentColor"/></svg>
+</a>
+
+<button class="totop" id="totop" aria-label="Voltar ao topo" hidden>↑</button>
+
+<!-- Lightbox da galeria: foco, setas e ESC são tratados em initLightbox(). -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizador de imagens" hidden>
+  <button class="lb-close" aria-label="Fechar">✕</button>
+  <button class="lb-prev" aria-label="Foto anterior">←</button>
+  <img alt="" id="lb-img" data-keep>
+  <button class="lb-next" aria-label="Próxima foto">→</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
